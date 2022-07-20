@@ -10,10 +10,5 @@ function love.update(dt)
 end
 
 function love.draw()
-    draw_fps(fps)
-end
-
-
-function draw_fps(fps)
-    love.graphics.print("fps : "..fps.value, 0, love.graphics.getHeight() -32)
+    FpsService:draw_fps(fps)
 end
